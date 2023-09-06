@@ -100,7 +100,130 @@ span{
 /* MEDIA QUERIES (SMALL DEVICES) */
 @media screen and(max-width: 600px) {
     header{
-        height: 100vh;
+        height: 60vh;
+        width: 100vw;
     }
     
 }
+
+/* chat gpt */
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .card {
+      background-position: center;
+      background-size: cover;
+    }
+  
+    .navbar {
+      position: relative;
+    }
+  
+    .nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      width: 100vw;
+      top: 100%;
+      left: 0;
+      transform: translateY(100%);
+      opacity: 0;
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+  
+    .nav.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  
+    .nav a {
+      display: block;
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+    }
+  
+    .container {
+      padding: 20px;
+    }
+  
+    .name h1 {
+      font-size: 24px;
+    }
+  
+    .cta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .cta a {
+      margin-bottom: 10px;
+    }
+  
+    .me {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .you {
+      font-size: 18px;
+    }
+  }
+  
+  /* Tablet and Desktop Styles */
+  /* @media (min-width: 768px) { */
+    /* .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: transparent;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  
+    .nav {
+      display: flex;
+      align-items: center;
+    }
+  
+    .nav a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+  
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px;
+    }
+  
+    .name h1 {
+      font-size: 48px;
+    }
+  
+    .cta {
+      display: flex;
+      align-items: center;
+    }
+  
+    .cta a {
+      margin-right: 10px;
+    }
+  
+    .me {
+      text-align: center;
+      margin-left: 40px;
+    }
+  
+    .you {
+      font-size: 72px;
+    }
+  } */
+  
